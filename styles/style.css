@@ -1,5 +1,5 @@
 body {
-    background-color: #5C7DA3;
+    background-color: #3A506B;
     margin: 0;
     font-family: 'Olive Village', sans-serif;
 }
@@ -7,19 +7,19 @@ body {
 .header {
     padding: 10px;
     text-align: left;
-    background: #A3825C;
+    background: #1C2541;
     color: white;
   }
 
 .header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: bisque;
+    color: whitesmoke  ;
 }
 
 .navigation {
     overflow: hidden;
-    background-color: #333;
+    background-color: #2B3B56;
 }
 
 .navigation a {

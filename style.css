@@ -1,10 +1,37 @@
 body {
-    background-color: #CCE2CB;
+    background-color: #5C7DA3;
+    margin: 0;
+    font-family: 'Olive Village', sans-serif;
 }
 
-h1 {
-    font-family: 'Olive Village', sans-serif;
+.header {
+    padding: 10px;
+    text-align: left;
+    background: #A3825C;
+    color: white;
+  }
+
+.header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: bisque;
 }
+
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }

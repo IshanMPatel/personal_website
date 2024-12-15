@@ -32,8 +32,36 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     });
+
+    // Settings Modal functionality
+    const settingsIcon = document.getElementById('settings-icon');
+    const modal = document.getElementById('settings-modal');
+    const closeModal = document.querySelector('.close');
+    const themeSwitch = document.getElementById('theme-switch');
+
+    settingsIcon.addEventListener('click', function () {
+        modal.style.display = 'block';
+    });
+
+    closeModal.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    themeSwitch.addEventListener('change', function () {
+        document.body.classList.toggle('dark-mode', themeSwitch.checked);
+    });
+
+    // Initialize AOS
+    AOS.init();
 });
 
+// For the contact form
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector('.contact-form');
     form.addEventListener('submit', function (e) {

@@ -64,6 +64,19 @@ document.addEventListener('DOMContentLoaded', function () {
 // For the contact form
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector('.contact-form');
+    const popup = document.querySelector('#message-popup'); // Popup element
+    const popupOverlay = document.querySelector('.popup-overlay'); // Overlay element
+    const popupMessage = document.querySelector('#popup-message'); // Message inside the popup
+    const closePopupButton = document.querySelector('#close-popup'); // Close button
+
+    // Close popup and enable scrolling
+    closePopupButton.addEventListener('click', function () {
+        popup.classList.add('hidden');
+        popupOverlay.classList.add('hidden');
+        document.body.classList.remove('popup-active'); // Allow scrolling again
+    });
+
+    // Handle form submission
     form.addEventListener('submit', function (e) {
         e.preventDefault(); // Prevent default form submission
 
@@ -77,14 +90,26 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }).then(response => {
             if (response.ok) {
-                alert('Thank you for your message! I will get back to you soon.');
+                // Show success popup
+                popupMessage.innerHTML = '<strong style="color: green;">✅<br>Message Sent!</strong><br>Thank you for your message.';
+                popup.classList.remove('hidden');
+                popupOverlay.classList.remove('hidden');
+                document.body.classList.add('popup-active'); // Disable scrolling
                 form.reset(); // Clear the form
             } else {
-                alert('Something went wrong. Please try again later.');
+                // Show error popup
+                popupMessage.innerHTML = '<strong style="color: red;">❌<br>Something went wrong!</strong><br>Please try again later.';
+                popup.classList.remove('hidden');
+                popupOverlay.classList.remove('hidden');
+                document.body.classList.add('popup-active'); // Disable scrolling
             }
         }).catch(error => {
             console.error('Error:', error);
-            alert('Something went wrong. Please try again.');
+            // Show error popup
+            popupMessage.innerHTML = '<strong style="color: red;">❌<br>An error occurred!</strong><br>Please try again.';
+            popup.classList.remove('hidden');
+            popupOverlay.classList.remove('hidden');
+            document.body.classList.add('popup-active'); // Disable scrolling
         });
     });
 });

@@ -14,3 +14,7 @@
 * Autoscroll from clicking the navigation bar
 * Scroll up button at bottom right
 * Settings cog with dark mode option
+
+### Where is it posted
+* Posted on LinkedIn
+* Posted on Handshake

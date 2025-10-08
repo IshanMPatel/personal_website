@@ -3,165 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishan's Portfolio</title>
+    <title>Ishan Patel | Software Engineer</title>
     <link rel="icon" href="images/IP_ICON.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <div class="header center">
-        <h1>Ishan Patel</h1>
-        <p>ishanpatel5654@gmail.com</p>
-    </div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-    <!-- Navigation -->
-    <div class="navigation">
-        <div class="nav-links">
-            <a href="#welcome">Welcome</a>
-            <a href="#experience">My Experience</a>
-            <a href="#projects">My Projects</a>
-            <a href="#contact">Contact Me</a>
+    <header class="main-header" id="navbar">
+        <div class="header-brand">
+            <a href="#welcome">
+                <h1>Ishan Patel</h1>
+                <p>Software Engineer</p>
+            </a>
         </div>
-        <i class="fas fa-cog settings-icon" id="settings-icon"></i>
-    </div>
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="#welcome">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="header-socials">
+                <a href="https://www.linkedin.com/in/ishan-patel-a6a267205/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
     
-    <!-- Settings Modal -->
-    <div id="settings-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Settings</h2>
-            <label for="theme-switch">Dark Mode:</label>
-            <input type="checkbox" id="theme-switch">
+    <section class="hero" id="welcome">
+        <div class="hero-content">
+            <img src="images/profile-pic.png" alt="Ishan Patel" class="profile-pic" data-aos="fade-up">
+            <h2 data-aos="fade-up" data-aos-delay="100">Hello, I'm Ishan Patel</h2>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">I'm a <span id="typed-text"></span></p>
+            <p data-aos="fade-up" data-aos-delay="300">This site includes information regarding myself, experiments, projects, and contact information.</p>
         </div>
-    </div>
-
-    <!-- Welcome Section -->
-    <section class="welcome" id="welcome">
-        <h2>Welcome to my Website!</h2>
-        <p>Hello! My name is Ishan Patel, and here is a formal welcome to a website that is all about me!</p>
-        <p>This site will include information regarding myself, experiments, projects, and contact information.</p>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h2 class="section-title" data-aos="fade-up">My Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="150"><i class="fas fa-c"></i><span>C/C++</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="350"><i class="fas fa-database"></i><span>SQL</span></div>
+            <div class="skill-item" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        </div>
     </section>
 
-    <!-- Experience Section -->
     <section class="experience" id="experience">
-        <h2>My Experience</h2>
-        <div class="experience-item">
-            <div class="logo-container">
-                <img src="images/cornelis-logo.png" alt="Comcast Logo" class="company-logo">
+        <h2 class="section-title" data-aos="fade-up">My Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <img src="images/cornelis-logo.png" alt="Cornelis Logo" class="company-logo">
+                    <h3>Cornelis Networks</h3>
+                    <p><strong>Embedded Software Engineer Internship</strong></p>
+                    <p class="date">Sep 2024 - Present</p>
+                    <ul>
+                        <li>Enhanced the Command Line Interface (CLI) by implementing autocomplete functionality and creating more detailed help menus.</li>
+                        <li>Developed and refined functional tests for CLI commands to ensure robust performance and reliability.</li>
+                        <li>Collaborated closely with the Software Validation Team to maintain clear communication.</li>
+                    </ul>
+                </div>
             </div>
-            <h3>Cornelis Networks</h3>
-            <p><strong>Embedded Software Engineer Internship</strong></p>
-            <p><strong>Chesterbrook, PA</strong></p>
-            <p><strong>Sep 2024 - Present</strong></p>
-            <ul>
-                <li>Enhanced the Command Line Interface (CLI) by implementing autocomplete functionality and creating more detailed help menus.</li>
-                <li>Developed and refined functional tests for CLI commands to ensure robust performance and reliability.</li>
-                <li>Collaborated closely with the Software Validation Team to maintain clear communication and alignment on command specifications for product release</li>
-            </ul>
-        </div>
 
-        <div class="experience-item">
-            <div class="logo-container">
-                <img src="images/comcast-logo.png" alt="Comcast Logo" class="company-logo">
+            <div class="timeline-item" data-aos="fade-left">
+                 <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <img src="images/comcast-logo.png" alt="Comcast Logo" class="company-logo">
+                    <h3>Comcast</h3>
+                    <p><strong>Data Analyst Internship</strong></p>
+                    <p class="date">Sep 2023 - Mar 2024</p>
+                    <ul>
+                        <li>Created and edited various dashboards to track database and table access from a divisional and user standpoint.</li>
+                        <li>Developed a script to efficiently download multiple dashboards into a single PDF file, streamlining manual processes.</li>
+                        <li>Presented a strategic proposal to leads for incorporating facial recognition cameras into Xfinity Home security systems.</li>
+                    </ul>
+                </div>
             </div>
-            <h3>Comcast</h3>
-            <p><strong>Data Analyst Internship</strong></p>
-            <p><strong>West Chester, PA</strong></p>
-            <p><strong>Sep 2023 - Mar 2024</strong></p>
-            <ul>
-                <li>Created and edited various dashboards, including one that accurately tracked database and table access from adivisional and user standpoint</li>
-                <li>Developed a script to efficiently download multiple dashboards into a single PDF file, streamlining manual processes</li>
-                <li>Presented a strategic proposal to Comcast leads for incorporating facial recognition cameras into Xfinity Home security systems</li>
-            </ul>
-        </div>
 
-        <div class="experience-item">
-            <div class="logo-container">
-                <img src="images/cornelis-logo.png" alt="Comcast Logo" class="company-logo">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <img src="images/cornelis-logo.png" alt="Cornelis Logo" class="company-logo">
+                    <h3>Cornelis Networks</h3>
+                    <p><strong>Embedded Software Engineer Internship</strong></p>
+                    <p class="date">Sep 2022 - Mar 2023</p>
+                    <ul>
+                        <li>Created scripts that allowed information from a barcode scan to be generated in a .ini file.</li>
+                        <li>Worked on a CLI to add various commands that concerned NTP configuration, logging, inventory, and LED statuses.</li>
+                        <li>Developed unit tests for all commands implemented.</li>
+                    </ul>
+                </div>
             </div>
-            <h3>Cornelis Networks</h3>
-            <p><strong>Embedded Software Engineer Internship</strong></p>
-            <p><strong>Chesterbrook, PA</strong></p>
-            <p><strong>Sep 2022 - Mar 2023</strong></p>
-            <ul>
-                <li>Created scripts that allowed information from a barcode scan to be generated in a .ini file</li>
-                <li>Worked on a CLI to add various commands that concerned NTP configuration, logging, showing inventory, LED statuses on boards, etc</li>
-                <li>Conducted various presentations to the team, such as demos for the Command Line Interface (CLI)</li>
-                <li>Developed unit tests for all commands implemented</li>
-            </ul>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Discord Moviebot</h3>
-            <p><strong>Owner/Developer</strong></p>
-            <p><strong>Fairless Hills, PA</strong></p>
-            <p><strong>February - April 2023</strong></p>
-            <ul>
-                <li>Developed a Discord bot that provides information about movies and TV shows.</li>
-                <li>Utilized the OMDB database to display details such as plot, images, and ratings.</li>
-                <li>Implemented a list system for managing watchlists, allowing users to add, remove, and rate movies and TV shows.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>Disability Resources Webpage</h3>
-            <p><strong>Developer</strong></p>
-            <p><strong>Philadelphia, PA</strong></p>
-            <p><strong>January - June 2022</strong></p>
-            <ul>
-                <li>Led development of the HTML shell of the website, gaining insights into the layout.</li>
-                <li>Assisted in extensive research on mental and physical disabilities, including definitions, helplines, and therapy resources.</li>
-                <li>Led JavaScript development for the daily diary section and a simple game.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>Python Arcade (6 Games)</h3>
-            <p><strong>Co-owner/Developer</strong></p>
-            <p><strong>Fairless Hills, PA</strong></p>
-            <p><strong>Feb - June 2020</strong></p>
-            <ul>
-                <li>Co-owned and developed a Python fighting game as part of an arcade collection.</li>
-                <li>Collaborated remotely with a partner to diversify user experiences across different genres.</li>
-                <li>Created a Python hub where users could easily select their preferred game.</li>
-                <li>Introduced a point system across all games to enhance user engagement.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>Flappy Pigeon</h3>
-            <p><strong>Owner/Developer</strong></p>
-            <p><strong>Fairless Hills, PA</strong></p>
-            <p><strong>March - Jul 2019</strong></p>
-            <ul>
-                <li>Owned and developed a vertically controllable pigeon game.</li>
-                <li>Players dodge moving obstacles for points, providing a calming online experience.</li>
-                <li>Implemented code in HTML, CSS, and JavaScript, recognized by the AP computer science professor.</li>
-                <li>Published on Replit and received an average rating of 4.2 out of 5.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>Novus Locus: Text-Based Adventure</h3>
-            <p><strong>Owner/Developer</strong></p>
-            <p><strong>Fairless Hills, PA</strong></p>
-            <p><strong>Nov 2017- Feb 2018</strong></p>
-            <ul>
-                <li>Developed Python-based text game featuring a multi-branching storyline.</li>
-                <li>Designed three distinct storylines with numerous events to encourage replayability.</li>
-                <li>Utilized efficient development processes in a classroom setting with intermediate coders.</li>
-                <li>Presented a product pitch and slideshow to the class, gaining early experience in public speaking and product promotion.</li>
-            </ul>
+        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="fade-up">
+                <h3>Discord Moviebot</h3>
+                <p class="date">Feb 2023 - Apr 2023</p>
+                <ul>
+                    <li>Developed a Discord bot using Python and the `discord.py` library to provide movie & TV show information.</li>
+                    <li>Integrated with the OMDB API to fetch and display details like plot, images, and ratings.</li>
+                    <li>Implemented a list management system for users to maintain personal watchlists.</li>
+                </ul>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Disability Resources Webpage</h3>
+                <p class="date">Jan 2022 - Jun 2022</p>
+                <ul>
+                    <li>Led the front-end development using HTML, CSS, and JavaScript for a resource hub for people with disabilities.</li>
+                    <li>Researched and compiled critical information, including definitions, helplines, and therapy resources.</li>
+                    <li>Engineered interactive features, including a daily diary and a simple therapeutic game.</li>
+                </ul>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Python Arcade (6 Games)</h3>
+                <p class="date">Feb 2020 - Jun 2020</p>
+                 <ul>
+                    <li>Co-developed an arcade collection featuring six distinct games built in Python with the Pygame library.</li>
+                    <li>Designed a central hub where users could easily select and launch their preferred game.</li>
+                    <li>Implemented a persistent cross-game point system to enhance user engagement and replayability.</li>
+                </ul>
+            </div>
+            
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                 <h3>Flappy Pigeon</h3>
+                 <p class="date">Mar 2019 - Jul 2019</p>
+                 <ul>
+                    <li>Owned and developed a "Flappy Bird" style game from scratch using HTML, CSS, and vanilla JavaScript.</li>
+                    <li>Published the game on Replit, where it received positive feedback and an average rating of 4.2 out of 5.</li>
+                    <li>The project was recognized by an AP Computer Science professor for its clean code and effective implementation.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact center" id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to send me a message by filling out the form below:</p>
+        <h2 data-aos="fade-up">Contact Me</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Feel free to send me a message by filling out the form below:</p>
         
-        <form action="https://formspree.io/f/movqoaqa" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/movqoaqa" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="200">
             <label for="name">Name</label>
             <textarea type="text" id="name" name="name" rows="1" placeholder="Your Name" required></textarea>
     
@@ -174,7 +171,7 @@
             <button type="submit">Send Message</button>
         </form>
 
-        <div class="social-links">
+        <div class="social-links" data-aos="fade-up" data-aos-delay="300">
             <a href="https://www.linkedin.com/in/ishan-patel-a6a267205/" target="_blank" rel="noopener">
                 <img src="images/linkedin-logo.png" alt="LinkedIn Icon" class="social-icon">
             </a>
@@ -184,27 +181,22 @@
         </div>
     </section>
 
-    <!-- Popup Overlay -->
     <div class="popup-overlay hidden"></div>
-
-    <!-- Popup -->
     <div id="message-popup" class="popup hidden">
         <div class="popup-content">
             <p id="popup-message"></p>
             <button id="close-popup">OK</button>
         </div>
     </div>
-    
 
-    <!-- Back to Top Button -->
     <button id="back-to-top" title="Back to Top">↑</button>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Ishan Patel. All rights reserved.</p>
+        <p>&copy; 2025 Ishan Patel. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
 </html>

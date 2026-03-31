@@ -1,11 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialize AOS (Animate on Scroll)
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 50,
-    });
-
     // Custom Cursor Logic
     const cursorDot = document.querySelector('.cursor-dot');
     const cursorOutline = document.querySelector('.cursor-outline');

@@ -3,6 +3,7 @@
 ### Plan
 * Create a website where I can display my resume attributes and maybe add some additional features, such as games.
 * A sketch is TBD as of now
+* Deployed to ishanmpatel.com
 
 ### Sections
 * Welcome - Information about myself
